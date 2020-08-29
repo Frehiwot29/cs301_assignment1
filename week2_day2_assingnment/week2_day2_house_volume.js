@@ -1,7 +1,7 @@
 const prompt = require("prompt-sync")();
 function tringularArea(a, b, c) {
   let s = (a + b + c) / 2;
-  let tringularArea = Math.sqrt(s);
+  let tringularArea = Math.sqrt(s * (s - a) * (s - b) * (s - c));
   return tringularArea;
 }
 function roofVolume(width, depth, sweep) {
