@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>address</title>
+    <script>
+      function addressInput() {
+        let name = document.getElementById("nameInputBox").value;
+        let zipcode = document.getElementById("inputZipcode").value;
+        let state = document.getElementById("inputState").value;
+        let street = document.getElementById("inputStreet").value;
+        let city = document.getElementById("inputCity").value;
+
+        let address =
+          "hello  " +
+          name +
+          " " +
+          zipcode +
+          " " +
+          state +
+          " " +
+          street +
+          " " +
+          city;
+
+        document.getElementById("outputDiv").innerHTML = address;
+      }
+    </script>
+  </head>
+  <body>
+    <p>
+      please enter your Name :<input
+        type="text"
+        id="nameInputBox"
+        size="10"
+      /><br />
+      please enter your street :<input
+        type="text"
+        id="inputStreet"
+        size="10"
+      /><br />
+      please enter your city :<input type="text" id="inputCity" size="10" />
+      please enter your state :<input type="text" id="inputState" size="10" />
+      please enter your zipcode :<input
+        type="text"
+        id="inputZipcode"
+        size="10"
+      />
+    </p>
+    <button type="button" onclick="addressInput()" size="10">
+      make address
+    </button>
+    <div id="outputDiv"></div>
+  </body>
+</html>

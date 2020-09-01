@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Applied Scripture</title>
+    <script>
+      function applayScripture() {
+        let name = document.getElementById("nameInputBox").value;
+        let scripture =
+          "hello  " +
+          name +
+          "  The LORD will make you the head, not the tail." +
+          " if you pay attenation to the commands of the lord your GOD that i give you this day and carefull follow them";
+        document.getElementById("outputDiv").innerHTML = scripture;
+      }
+    </script>
+  </head>
+  <body>
+    <p>
+      please enter your Name:<input type="text" id="nameInputBox" size="10" />
+    </p>
+    <button type="button" onclick="applayScripture()" size="10">Verse</button>
+    <div id="outputDiv"></div>
+  </body>
+</html>
